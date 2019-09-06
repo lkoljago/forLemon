@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'usual';
+  src: url('../fonts/Rafale BG.otf');
+}
+@font-face {
+  font-family: 'zagolovok';
+  src: url('../fonts/Tinos-Bold.ttf');
+}
+
+.clearfix {
+  clear: both;
+}
+
+#shapka {
+  height: 110px;
+  background-image: url(../images/fon3.jpg);
+  background-repeat: repeat-x;
+}
+
+#shapka .text {
+	text-align:right;
+	color: 59045e;
+	font-size: 30px;
+	padding-right: 20px;
+	font-weight: 1000;
+}
+
+body {
+	clear: both;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	background-image: url(../images/fon2.jpg);
+	background-repeat: repeat;
+	font-family: "usual";
+}
+
+.halfpage-image{
+	width:50%;
+}
+
+.halfpage-text{
+	font-size: 18px;
+	text-align:justify;
+	padding-right: 40px;
+	
+}
+
+.halfpage-name {
+	text-align:center;
+	font-size:28px;
+	color: 59045e;
+	font-weight: 1000;
+	font-family: "zagolovok";
+	font-size: 50px;
+}
+
+#about {
+	text-align: right;
+	position:relative;
+}
+
+#bookdescription {
+	margin-left: 20px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+}
+
+#bookdescription .text{
+	text-align: justify;
+    text-indent: 20px;
+}
+#bookdescription .name{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 800;
+}
+#bookdescription .author{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	
+}
+
+#bookdescription .photo {
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+#catalog {
+	background-image: url(../images/fon3.jpg);
+	background-repeat:repeat;
+
+}
+
+#catalog .bookname {
+	text-align: center;
+	width:80%;
+	padding-left: 50px;
+	padding-bottom: 30px;
+	font-size: 18px;
+	font-weight: 800;
+/*	text-shadow: -2px -2px 0 violet; 
+	font-family: "zagolovok";*/
+}
+#catalog .img {
+	padding-top: 50px;
+}
+
+#catalog .img:hover {
+  filter:alpha(opacity=50); 
+  ..-opacity:0.5; 
+  opacity: 0.5;
+  -khtml-opacity:0.5;
+}
+
+
+#footer {
+	height: 100px; 
+	background-image: url(../images/fon3.jpg);
+	background-repeat: repeat-x;
+}
+
+#footer .text {
+	text-align:right;
+	color: 59045e;
+	font-size: 20px;
+	padding-right: 40px;
+	padding-top: 50px;
+}
+
+#footer .address {
+	padding-left: 40px;
+	text-align:left;
+	color: 59045e;
+	font-size: 16px;
+}
+
+#footer2 {
+	height: 100px; 
+	background-image: url(../images/fon2.jpg);
+	background-repeat: repeat-x;
+}
+
+#footer2 .text {
+	text-align:right;
+	color: 59045e;
+	font-size: 20px;
+	padding-right: 40px;
+	padding-top: 50px;
+}
+
+#footer2 .address {
+	padding-left: 40px;
+	text-align:left;
+	color: 59045e;
+	font-size: 16px;
+}
+
+
+.forma{
+padding-left: 20px;
+clear:both; text-align:right;
+float:left;
+	
+}
+
+.payment {
+	background-image: url(../images/fon3.jpg);
+	background-repeat: repeat;
+	text-align: center;
+	justify-content: center;
+	width: 50%;
+	float: left;
+	padding-bottom: 128px;
+}
+
+#zakaz {
+	background-image: url(../images/fon3.jpg);
+	background-repeat: repeat;
+	width: 50%;
+	float: left;
+	padding-bottom: 50px;
+
+
+}
+
+#zakaz .form_name {
+	
+	text-align: left;
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 50px;
+
+}
+#text {margin:50px auto; width:500px}
+.hotspot {color:#900; padding-bottom:1px; border-bottom:1px dotted #900; cursor:pointer}
+
+#tt {position:absolute; display:block; background:url(images/tt_left.gif) top left no-repeat}
+#tttop {display:block; height:5px; margin-left:5px; background:url(images/tt_top.gif) top right no-repeat; overflow:hidden}
+#ttcont {display:block; padding:2px 12px 3px 7px; margin-left:5px; background:#666; color:#FFF}
+#ttbot {display:block; height:5px; margin-left:5px; background:url(images/tt_bottom.gif) top right no-repeat; overflow:hidden}
+
+/*
+#body {
+	margin: 0;
+	padding: 0 0 30px;
+	text-align: center;
+}
+
+#about .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+	background-color: #be0b59;
+	
+}
+*/
+.counter {
+  position:absolute; 
+  text-align:center;
+  padding-left: 500px;
+
+}

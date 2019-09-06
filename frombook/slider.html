@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>-->
+
+</head>
+<style>
+  #main {
+    position: relative;
+    margin: 100px auto;
+    padding: 5px;
+    width: 660px;
+    height: 360px;
+    background-color: silver;
+    border: 5px solid gray;
+    border-radius: 15px;
+  }
+  #scr{
+    margin: 20px auto;
+    width: 600px;
+    height: 320px;
+    margin-top: 20px;
+    background-color: white;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  button {
+    position: absolute;
+    top: 150px;
+    width: 25px;
+    height: 70px;
+    font: 12pt arial, tahoma, sans-serif;
+    text-align: center;
+  }
+  .left{
+    left: 5px;
+  }
+  .right{
+    right: 5px;
+  }
+</style>
+<script>
+  var slider = {
+    slides: ['1.jpg','2.jpg','3.jpg','4.jpg','11.jpg'],
+    frame:0,
+    set: function(image) {
+      document.getElementById("scr").style.backgroundImage = "url(images/"+image+")";},
+    init: function() {
+      
+      this.set(this.slides[this.frame]);
+    },
+    left: function() {
+      this.frame--;
+      if(this.frame<0) this.frame = this.slides.length-1;
+      this.set(this.slides[this.frame]);
+    },
+    right: function() {
+      this.frame++;
+      if(this.frame==this.slides.length) this.frame = 0;
+      this.set(this.slides[this.frame]);
+    }
+  };
+  window.onload = function() {
+   
+    slider.init();
+    setInterval(function() {
+      slider.right();
+    }, 2000);
+  };
+</script>
+<body>
+  <div id="main">
+    <button class="left" onclick="slider.left();"><</button>
+    <div id="scr"></div>
+    <button class="right" onclick="slider.right();">></button>
+  </div>
+</body>
+</html>
