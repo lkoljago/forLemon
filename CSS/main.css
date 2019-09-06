@@ -1,0 +1,809 @@
+html {
+    line-height: 1.15;
+}
+
+body {
+    margin: 0;
+    background: #eaeaea;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+p,
+h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* deleted gray background in IE - RECOMMENDED */
+    background-color: transparent;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+    display: list-item;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bananas-button,
+.cinnamon-recipe-button,
+.not-found-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+
+/* HEADER */
+header {
+    width: 1120px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__logo {
+    width: 382px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation bar */
+nav {
+    width: 1120px;
+    background: #f8f8f8;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 42px;
+    padding: 42px 100px;
+}
+
+.navBar {
+    width: 1120px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navBar__logo {
+    width: 87px;
+    margin-right: 90px;
+}
+
+.navBar__links {
+    width: 524px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navBar__links a {
+    font-family: "Josefin Sans", sans;
+    font-weight: 300;
+}
+
+.navBar__search {
+    width: 192px;
+    margin-left: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.navBar__search input {
+    display: block;
+    width: 100%;
+    font-family: "Josefin Sans", sans;
+    font-weight: 300;
+    padding: 7px 0px 7px 10px;
+}
+
+/* Other option for view in IE10, Safari and other
+** from constructor
+*/
+.nav-search input::-webkit-input-placeholder {
+    color: grey;
+}
+
+.nav-search input::-moz-placeholder {
+    color: grey;
+}
+
+.nav-search input:-ms-input-placeholder {
+    color: grey;
+}
+
+.nav-search input::-ms-input-placeholder {
+    color: grey;
+}
+
+.nav-search input::placeholder {
+    color: grey;
+}
+
+/* FOR ALL SECTION */
+.bananas__button,
+.cinnamon-recipe-button,
+.not-found-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+/* SECTION 1 */
+.bananas {
+    background-color: #f8f8f8;
+    width: 1120px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    padding-left: 93px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 42px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bananas__logo {
+    width: 252px;
+}
+
+.bananas__header {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #921026;
+}
+
+.bananas__description {
+    width: 360px;
+    font-family: "Josefin Sans", sans;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    margin-bottom: .6rem;
+}
+
+.bananas__button {
+    padding: 0;
+    width: 105px;
+    border: 1.0px solid #c2c2c2;
+    font-family: "Josefin Sans", sans;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 6px;
+    padding-right: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bananas__button :hover {
+    background-color: whitesmoke;
+    color: #0a0a0a;
+}
+
+/* SECTION 2 */
+.dishes {
+    background-color: #ffffff;
+    width: 1120px;
+    margin: auto;
+    padding: 50px 40px 45px 53px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 42px;
+}
+
+.dishes__wrapper {
+    width: 1023px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.dish {
+    width: 313px;
+}
+
+.dish__image {
+    display: block;
+    width: 313px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.dish__image img {
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+}
+
+.dish__image img:hover {
+    -webkit-transform: scale(1.025);
+    -ms-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.dish__description {
+    margin-top: 0;
+    font-family: "Josefin Sans", sans;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.dish__description__elements {
+    width: 125px;
+    font-family: 'Open Sans', sans;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #555555;
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.clock__icon {
+    width: 11px;
+}
+
+.dish__paragraph {
+    padding: 0;
+    margin: 0;
+    margin-right: 3px;
+}
+
+.line {
+    margin-right: 4px;
+    width: 1px;
+}
+
+.comment {
+    width: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 4px;
+}
+
+.comment__icon {
+    width: 13px;
+    margin-right: 2px;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.view {
+    width: 49px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.view__icon {
+    width: 13px;
+    margin-right: 2px;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.cinnamon {
+    width: 1120px;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0;
+    margin-bottom: 137px;
+}
+
+.cinnamon__image {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+}
+
+.cinnamon__image img {
+    width: 100%;
+}
+
+.cinnamon__recipe {
+    padding-top: 20px;
+    padding-left: 42px;
+    padding-bottom: 22px;
+}
+
+.cinnamon__recipe__header {
+    width: 492px;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #055555;
+    margin-bottom: 13px;
+}
+
+.cinnamon__recipe__bar {
+    width: 480px;
+    margin-bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.cinnamon__recipe__elements {
+    width: 153px;
+    font-family: 'Open Sans', sans;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #555555;
+}
+
+.cinnamon__timing {
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.cinnamon__clock__icon {
+    width: 14px;
+    margin-right: 2px;
+}
+
+.cinnamon__rectangles {
+    padding: 0;
+    height: 10px;
+    width: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.rectangle {
+    width: 5px;
+}
+
+.recipe__difficulty {
+    padding: 0;
+    margin: 0;
+    font-family: "Josefin Sans", sans;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cinnamon__recipe__button {
+    width: 105px;
+    border: 1.0px solid #c2c2c2;
+    font-family: "Josefin Sans", sans;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 9px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cinnamon__recipe__button:hover {
+    background-color: whitesmoke;
+    color: #0a0a0a;
+}
+
+.cinnamon__recipe__description {
+    width: 480px;
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    color: #000000;
+}
+
+.cinnamon__recipe__instruction {
+    padding: 0;
+    font-family: "Josefin Sans", sans;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.cinnamon__recipe__directions__header {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+
+.cinnamon__recipe__direction {
+    margin-top: 19px;
+    font-family: "Josefin Sans", sans;
+    font-weight: 400;
+}
+
+/* 
+** SECTION WRAPPER
+*/
+.wrapper {
+    width: 1120px;
+    margin: 0 auto 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.not__found {
+    margin-right: 84px;
+    width: 518px;
+    padding-top: 23px;
+    background-size: cover;
+    background-position: center;
+}
+
+.not__found__header {
+    font-family: "Josefin Sans", sans;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    margin-left: 44px;
+    margin-bottom: 11px;
+}
+
+.not__found__styled__line {
+    width: 440px;
+    height: 2px;
+    opacity: 0.2;
+    background-color: #555555;
+    margin: 0 45px 145px 33px;
+}
+
+.not__found__button {
+    width: 105px;
+    border: 1px solid #c2c2c2;
+    margin-right: auto;
+    padding: 9px 38px 9px 37px;
+    font-family: "Josefin Sans", sans;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto 52px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.not__found__button:hover {
+    background-color: whitesmoke;
+    color: #0a0a0a;
+}
+
+.sorry {
+    width: 130px;
+    margin: 0 auto 108px;
+}
+
+.sorry__header {
+    font-family: "Josefin Sans", sans;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #000000;
+    margin: 0 189 4px 199px;
+    text-align: center;
+}
+
+.sorry__text {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #a9a9a9;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sorry__img {
+    width: 31px;
+    margin-left: 55px;
+}
+
+.author {
+    width: 518px;
+    padding-top: 23px;
+    background: #ffffff;
+}
+
+.author__header {
+    font-family: "Josefin Sans", sans;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    margin-left: 44px;
+    margin-bottom: 11px;
+}
+
+.author__styled__line {
+    width: 440px;
+    height: 2px;
+    opacity: 0.2;
+    background-color: #555555;
+    margin: 0 auto 24px;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.author__image {
+    width: 128px;
+    margin-left: 32px;
+    margin-right: 20px;
+}
+
+.author__name {
+    font-family: "Josefin Sans", sans;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.author__country {
+    font-family: "Josefin Sans", sans;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.social__networks__icons {
+    width: 99px;
+    opacity: 0.5;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.author__about__styled__line {
+    width: 291px;
+    height: 2px;
+    opacity: 0.2;
+    background-color: #555555;
+}
+
+.about__lemon {
+    margin-left: 181px;
+    margin-bottom: 32px;
+    font-family: "Josefin Sans", sans;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+.about__lemon__text {
+    width: 288px;
+    margin-left: 181px;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.025em;
+    margin-bottom: 22px;
+}
+
+.signature {
+    width: 163px;
+    margin-left: 314px;
+    margin-bottom: 33px;
+}
+
+/*
+** FOOTER 
+*/
+footer {
+    width: 1120px;
+    opacity: 0.8;
+    background-color: #000000;
+    margin: auto;
+    padding: 72px 54px 55px 86px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer__logo {
+    width: 87px;
+}
+
+.footer__links {
+    width: 401px;
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__links a {
+    font-family: "Josefin Sans", sans;
+    color: #fefefe;
+}
+
+.footer__rights {
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__rights__text {
+    opacity: 0.5;
+    font-family: "Josefin Sans", sans;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #fefefe;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__rights__copyright {
+    width: 12px;
+    margin-right: 4px;
+}
+
+.footer__icons {
+    width: 99px;
+    margin-left: auto;
+    cursor: pointer;
+}
